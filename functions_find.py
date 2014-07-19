@@ -1,24 +1,12 @@
-def find (ori_string,old_sub,new_sub):
-  count_occur(ori_string,old_sub)
-  replace(ori_string,old_sub,new_sub)
-
-
-def count_occur(ori_string,old_sub):
+def find(ori_string,old_sub,new_sub):
   count=0
-  for number in [len(old_sub)]:
-    chunk_start=len(ori_string)-len(old_sub)
+  for number in range(len(old_sub),len(ori_string)):
+    chunk_start=len(ori_string)-number
+    print chunk_start
     chunk=ori_string[chunk_start:len(ori_string)-1]
     if chunk==old_sub:
       count=count+1
-      chunk_start=chunk_list[i]
+      ori_string[chunk_start]=new_sub
     else:
-        no_show()
+       print"blah"
   
-def replace(ori_string,old_sub,new_sub):
-    for i in range [len(old_sub)]:
-        ori_string[chunk_list[i]]=new_string
-        
-        print ori_string
-            
-def no_show():
-  print "That substring ain't here buddy,"
