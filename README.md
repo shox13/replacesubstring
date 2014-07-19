@@ -1,7 +1,7 @@
 #replacesubstring
 ================
 
-#Will find your desired substring from a string and replace it with you desired new substring
+#Give it a string and then search for a substring. Replace that substring with a new substring. 
 
 def find (ori_string, sub_old, sub_new):
     if sub_old in ori_string:        
